@@ -109,7 +109,7 @@
             $('#appliedJobsTable, #curiousJobsTable, #inactiveJobsTable').DataTable({
                 "searching": false,  // Disable search
                 "paging": false,     // Disable pagination
-                "order": []          // Disable initial sorting
+                "order": [[1, 'asc']] // Sort by the second column (index 1) in ascending order (0 is the first column)
             });
         });
     </script>
